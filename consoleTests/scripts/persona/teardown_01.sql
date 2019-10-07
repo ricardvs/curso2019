@@ -1,0 +1,1 @@
+delete from PERSONA where ID > 54;

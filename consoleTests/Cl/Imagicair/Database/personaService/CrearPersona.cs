@@ -14,6 +14,12 @@ namespace Cl.Imagicair.Database.personaService
             SqliteHelper.EjecutarSqliteScript("../../../scripts/carga_inicial.sql");
         }
 
+        [TearDown]
+        public void Reset()
+        {
+            SqliteHelper.EjecutarSqliteScript("../../../scripts/persona/teardown_01.sql");
+        }
+
         [Test]
         public void CasoNormal()
         {
