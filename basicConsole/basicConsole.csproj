@@ -15,6 +15,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Ninject" Version="3.3.4" />
     <PackageReference Include="System.Data.SqLite.Core" Version="1.0.111.0" />
     <PackageReference Include="System.Text.Json" Version="4.6.0" />
   </ItemGroup>
