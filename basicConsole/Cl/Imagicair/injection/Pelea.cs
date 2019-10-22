@@ -17,13 +17,13 @@ namespace Cl.Imagicair.Injection
                 .To<Guerrero>()
                 .Named("ninja")
                 .WithConstructorArgument("arma", request => kernel.Get<Espada>())
-                .WithConstructorArgument("nombre", "Ninja-San");
+                .WithConstructorArgument("nombre", "Garu-San");
 
                 kernel.Bind<Guerrero>()
                 .To<Guerrero>()
                 .Named("pistolero")
                 .WithConstructorArgument("arma", request => kernel.Get<Pistola>())
-                .WithConstructorArgument("nombre", "Er Bairon");;
+                .WithConstructorArgument("nombre", "Er Barsimso");;
 
             ninja = kernel.Get<Guerrero>("ninja");
             pistolero = kernel.Get<Guerrero>("pistolero");
